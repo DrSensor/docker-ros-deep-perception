@@ -18,9 +18,10 @@ RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main"
 
 RUN apt-get update && apt-get install -y \
     cmake \
-    python3-pip python3-dev python3.4-venv
+    python3-pip python3-dev python3.4-venv \
+&& pip3 install --upgrade pip
 
-RUN pip3 install --no-cache-dir --upgrade pip wheel numpy cython
+RUN pip3 install --no-cache-dir --upgrade wheel numpy cython
 
 # Intall ROS INDIGO
 RUN apt-get install -y \
