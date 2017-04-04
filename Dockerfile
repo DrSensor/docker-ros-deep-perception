@@ -1,4 +1,4 @@
-FROM cimenx/docker-ros-deep-perception
+FROM ubuntu:14.04
 MAINTAINER Fahmi Akbar Wildana <fahmi.akbar.w@mail.ugm.ac.id>
 
 # setup environment
