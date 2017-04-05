@@ -35,7 +35,7 @@ RUN apt-get install -y \
     xbitmaps \
     xorg-sgml-doctools \
     xterm \
-    xtrans-d \
+    xtrans-dev \
     qt4-qmake qtchooser qtcore4-l10n \
     libopencv* \
     x11* \
