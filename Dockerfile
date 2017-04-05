@@ -27,21 +27,21 @@ RUN pip3 install --no-cache-dir --upgrade wheel numpy cython
 RUN apt-get install -y \
         ros-$ROS_DISTRO-ros-base \
         ros-$ROS_DISTRO-image-pipeline \
-        ros-$ROS_DISTRO-laser-pipeline \
-&& apt-get purge -y \
-    ros-indigo-image-view \
-    ros-indigo-cv-bridge \
-    ros-indigo-vision-opencv \
-    xbitmaps \
-    xorg-sgml-doctools \
-    xterm \
-    xtrans-dev \
-    qt4-qmake qtchooser qtcore4-l10n \
-    libopencv* \
-    x11* \
-    libqt* \
-    libvtk* \
-    libx11*
+        ros-$ROS_DISTRO-laser-pipeline
+# && apt-get purge -y \
+#     ros-indigo-image-view \
+#     ros-indigo-cv-bridge \
+#     ros-indigo-vision-opencv \
+#     xbitmaps \
+#     xorg-sgml-doctools \
+#     xterm \
+#     xtrans-dev \
+#     qt4-qmake qtchooser qtcore4-l10n \
+#     libopencv* \
+#     x11* \
+#     libqt* \
+#     libvtk* \
+#     libx11*
 
 
 RUN pip3 install --no-cache-dir rosdep rosinstall vcstools
