@@ -1,0 +1,21 @@
+image: docker:latest
+services:
+- docker:dind
+
+stages:
+- build
+- deploy
+
+
+before_script:
+  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+build:
+  stage: build
+  script:
+    - docker build -t cimenx/ros-deep-perception .
+
+upload:
+  stage: deploy
+  script:
+    - docker push cimenx/ros-deep-perception
