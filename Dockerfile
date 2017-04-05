@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Fahmi Akbar Wildana <fahmi.akbar.w@mail.ugm.ac.id>
+LABEL maintainer "fahmi.akbar.w@mail.ugm.ac.id"
 
 # setup environment
 RUN locale-gen en_US.UTF-8
