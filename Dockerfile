@@ -27,7 +27,7 @@ RUN pip3 install --no-cache-dir --upgrade wheel numpy cython
 RUN apt-get install -y \
         ros-$ROS_DISTRO-ros-base \
         ros-$ROS_DISTRO-image-pipeline \
-        ros-$ROS_DISTRO-laser-pipeline
+        ros-$ROS_DISTRO-laser-pipeline \
 && apt-get purge -y \
     ros-indigo-image-view \
     ros-indigo-cv-bridge \
